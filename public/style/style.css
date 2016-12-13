@@ -1,0 +1,76 @@
+body {
+	font-family: "Lato", sans-serif;
+	color: white;
+    background-color: black;
+	text-align: center;
+}
+
+#header {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	margin: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#text {
+	font-family: sans-serif;
+	visibility: hidden;
+	font-size: 20px;
+}
+
+#nav {
+  background-color: rgba(74, 171, 5, 0.8);
+  text-align: center;
+}
+
+#nav ul  {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: white;
+	zoom: 1;
+}	
+
+li {
+	display: inline;
+}
+
+#footer{
+	font-family: Arial;
+	font-size: 13px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	text-align: center;
+}
+
+.button {
+	border: none;
+	color: white;
+    text-align: center;
+    text-decoration: none;
+	display: inline-block;
+    font-size: 25px; /* button size */
+    margin: 30px 2px;
+    cursor: pointer;
+	padding: 14px 40px; /* button size */
+	border-radius: 10px; /* round box */
+	-webkit-transition-duration: 0.4s; /* Safari */
+}
+
+.button:hover {
+    background-color: white; /* Green */
+    color: black;
+}
+
+.happy{background-color: red;}
+.sad{background-color: grey;}
+.calm {background-color: #008CBA;} /* Blue */
+.excited {background-color: #4CAF50;} /* Red */ 
+.adventurous {background-color: brown;} /* Gray */ 
+
+
