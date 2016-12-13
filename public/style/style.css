@@ -20,21 +20,22 @@ body {
 	font-size: 20px;
 }
 
-#nav {
-  background-color: rgba(74, 171, 5, 0.8);
-  text-align: center;
+#container {
+	border: 3px solid rgb(201, 0, 1); 
+	overflow: hidden; 
+	margin: 15px auto; 
+	max-width: 753px;
 }
 
-#nav ul  {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: white;
-	zoom: 1;
-}	
-
-li {
-	display: inline;
+#iframe {
+	position: relative;
+	top: 305px;
+	border: 0px none; 
+	margin-left: -185px; 
+	height: 1200px; 
+	margin-top: -533px; 
+	width: 1200px;
+	right: 200px;
 }
 
 #footer{
