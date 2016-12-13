@@ -1,9 +1,13 @@
 $(document).ready(function() {
 	$('#text').css('visibility','visible').hide().fadeIn(2000);
-	$("#container").load("https://www.rottentomatoes.com/m/the_secret_life_of_pets #center");
 });
 
-
+$('.button').click(function(){
+	$('#container, #question').css('visibility','visible').hide().fadeIn(2000);
+	$('html, body').animate({ 
+      scrollTop: $('#question').offset().top 
+  }, 2000); 
+});
 
 function myFunction() {
     var x = document.createElement("IFRAME");
