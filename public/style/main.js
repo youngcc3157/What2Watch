@@ -1,12 +1,12 @@
 $(document).ready(function() {
-	$('#text').css('visibility','visible').hide().fadeIn(2000);
+	$('#text').css('visibility','visible').hide().fadeIn(1500);
 });
 
 $('.button').click(function(){
 	$('#container, #question').css('visibility','visible').hide().fadeIn(2000);
 	$('html, body').animate({ 
-      scrollTop: $('#question').offset().top 
-  }, 2000); 
+      scrollTop: $('#block').offset().top 
+  }, 800); 
 });
 
 function myFunction() {

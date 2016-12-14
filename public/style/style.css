@@ -14,13 +14,9 @@ body {
 	margin-right: auto;
 }
 
-#text {
-	font-family: sans-serif;
-	visibility: hidden;
-	font-size: 20px;
-}
-
-#question {
+#text, #question {
+	margin-top: 2px;
+	margin-bottom: 2px;
 	font-family: sans-serif;
 	visibility: hidden;
 	font-size: 20px;
@@ -34,9 +30,8 @@ body {
 	visibility: hidden;
 }
 
-#iframe, #cover {
+#iframe {
 	position: relative;
-	point-events: none;
 	top: 305px;
 	border: 0px none; 
 	margin-left: -185px; 
@@ -44,17 +39,6 @@ body {
 	margin-top: -533px; 
 	width: 1200px;
 	right: 200px;
-}
-
-#iframe {
-  z-index:1;
-}
-
-#cover {
-  z-index:2;
-  position:absolute;
-  width: 100%;
-  height: 100%;
 }
 
 #footer{
