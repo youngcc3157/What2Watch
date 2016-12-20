@@ -27,18 +27,11 @@ body {
 	overflow: hidden; 
 	margin: 15px auto; 
 	max-width: 753px;
+	height: 0px;
 	visibility: hidden;
 }
 
 #iframe {
-	position: relative;
-	top: 305px;
-	border: 0px none; 
-	margin-left: -185px; 
-	height: 1200px; 
-	margin-top: -533px; 
-	width: 1200px;
-	right: 200px;
 }
 
 #footer{
