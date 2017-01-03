@@ -1,12 +1,9 @@
 $(document).ready(function() {
 	$('#text').css('visibility','visible').hide().fadeIn(1500);
-	$.post('getMovie.php', {name: name}, function(data) {
-		alert(data);
-	});
 });
 
 function clicked(obj, emotion) {
-	$('#iframe').attr('src', myFunction(emotion));
+	myFunction(emotion);
 	$('#container, #question').css({"visibility": "visible"}).hide().fadeIn(2000);
 	$('html, body').animate({ 
 		scrollTop: $('#block').offset().top 
@@ -24,10 +21,8 @@ function clicked(obj, emotion) {
 	})
 }
 function myFunction(emotion) {
-	var link = "https://www.rottentomatoes.com/m/";
-	$.post('getMovie.php', {name: name}, function(data) {
-		alert(data);
+	$.post('getMovie.php', {input: emotion}, function(data) {
+		$('#iframe').attr('src', "https://www.rottentomatoes.com/m/" + data);
+		document.getElementById("link").href = "https://www.rottentomatoes.com/m/" + data;
 	});
-
-    return link;
 }
