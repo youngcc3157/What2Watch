@@ -26,10 +26,8 @@
 		<div id="block"></div>
 		
 		<?php
-		$divName = "test";
-			echo '<div id = "'. $divName. '"> 
-					<h2> yoyo <h2>
-				  </div>';
+			$divName = "test";
+			echo '<div id = "' . $divName . '"><h2>haha</h2></div>';
 		?>
 		
 		<div id="container">
