@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>What2Watch</title>
+	<head>
+		<title>What2Watch</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" type="text/css" href="style/style.css" />
-    </head>
-    <body>
-        <div id="header">
+	</head>
+	<body>
+
+		<div id="header">
 			<h1>What2Watch</h1>
 		</div>
 		
@@ -15,17 +16,17 @@
 		</div>
 		
 		<div id="buttons">
-			<input type="button" class="button happy" value="Happy">
-			<input type="button" class="button sad" value="Sad">
-			<input type="button" class="button calm" value="Calm">
-			<input type="button" class="button excited" value="Excited">
-			<input type="button" class="button adventurous" value="Adventurous">
+			<input type="button" class="button happy" onclick = "clicked(this,'Happy')" value="Happy">
+			<input type="button" class="button sad" onclick = "clicked(this,'Sad')" value="Sad">
+			<input type="button" class="button calm" onclick = "clicked(this,'Calm')" value="Calm">
+			<input type="button" class="button excited" onclick = "clicked(this,'Excited')" value="Excited">
+			<input type="button" class="button adventurous" onclick = "clicked(this,'Adventurous')" value="Adventurous">
 		</div>
 		
 		<div id="block"></div>
 		
 		<div id="container">
-			<iframe scrolling="no" id="iframe" src="https://www.rottentomatoes.com/m/ben_hur_2016" sandbox></iframe>
+			<iframe scrolling="no" id="iframe" src="" sandbox></iframe>
 			<div id="cover"></div>
 		</div>
 		
@@ -37,9 +38,10 @@
 		<div id="footer">
 			<p>copyright &copy YoungChul Chun</p>
 		</div>
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
 		<script type="text/javascript" src='style/main.js'></script>
+		
    </body>
 
 </html>

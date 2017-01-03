@@ -1,8 +1,12 @@
 $(document).ready(function() {
 	$('#text').css('visibility','visible').hide().fadeIn(1500);
+	$.post('getMovie.php', {name: name}, function(data) {
+		alert(data);
+	});
 });
 
-$('.button').click(function(){
+function clicked(obj, emotion) {
+	$('#iframe').attr('src', myFunction(emotion));
 	$('#container, #question').css({"visibility": "visible"}).hide().fadeIn(2000);
 	$('html, body').animate({ 
 		scrollTop: $('#block').offset().top 
@@ -17,11 +21,13 @@ $('.button').click(function(){
 		"margin-top": "-533px", 
 		"width": "1200px",
 		"right": "200px"
+	})
+}
+function myFunction(emotion) {
+	var link = "https://www.rottentomatoes.com/m/";
+	$.post('getMovie.php', {name: name}, function(data) {
+		alert(data);
 	});
-});
 
-function myFunction() {
-    var x = document.createElement("IFRAME");
-    x.setAttribute("src", "http://www.w3schools.com");
-    document.body.appendChild(x);
+    return link;
 }
